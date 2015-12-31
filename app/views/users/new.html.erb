@@ -1,0 +1,14 @@
+<h2>User Registration</h2>
+<%= form_for @user do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </p><br/>
+    <p>
+      <%= f.submit "Create" %>
+    </p><br/>
+<% end %>

@@ -1,0 +1,8 @@
+<% @users.each do |user|%>
+    <p>
+      <%= user.name %>,
+      <%= user.email %>
+    </p>
+<% end %>
+<br/>
+<%= link_to "Create User", new_user_path %>
